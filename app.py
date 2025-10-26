@@ -72,7 +72,7 @@ import os
 
 app = Flask(__name__)
 CORS(app, origins=[
-    "https://multi-disease-frontend.vercel.app/", 
+    "https://multi-disease-frontend.vercel.app", 
     "http://localhost:5173", 
 ])
 
