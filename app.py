@@ -71,7 +71,10 @@ import numpy as np
 import os
 
 app = Flask(__name__)
-CORS(app, origins="*")  # Enable CORS globally
+CORS(app, origins=[
+    "https://multi-disease-frontend.vercel.app/", 
+    "http://localhost:5173", 
+])
 
 # 🔹 Load models + scalers
 heart_model = joblib.load("models/logistic_model.pkl")
